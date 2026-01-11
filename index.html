@@ -27,8 +27,8 @@
     }
 
     h1 {
+      margin: 0 0 0.5rem 0; /* removed top margin to eliminate excess space */
       font-size: 3rem;
-      margin-bottom: 0.5rem;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     }
 
@@ -74,7 +74,7 @@
     /* Mobile visual balance tweaks */
     @media (max-width: 600px) {
       body {
-        padding-top: 0.5rem;
+        padding-top: env(safe-area-inset-top, 0.5rem);
       }
 
       h1 {
