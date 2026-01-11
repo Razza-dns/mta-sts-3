@@ -36,7 +36,7 @@
       font-size: 1.2rem;
       max-width: 600px;
       line-height: 1.5;
-      padding: 0 1rem; /* prevent edge clipping on small screens */
+      padding: 0 1rem;
     }
 
     code {
@@ -55,7 +55,6 @@
       text-decoration: underline;
     }
 
-    /* Clickable code without visual change */
     .code-link {
       color: inherit;
       text-decoration: none;
@@ -70,6 +69,17 @@
       bottom: env(safe-area-inset-bottom, 20px);
       font-size: 0.9rem;
       color: rgba(255,255,255,0.7);
+    }
+
+    /* Mobile visual balance tweaks */
+    @media (max-width: 600px) {
+      body {
+        padding-top: 0.5rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   </style>
 </head>
